@@ -15,7 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 title: dragontony1.github.io
 email: dragontony1@gmail.com
-baseurl: "/dtB"
 url: "https://dragontony1.github.io"
 github_username:  dragontony1
 permalink: /:categories/:title
