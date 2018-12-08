@@ -18,6 +18,7 @@ email: dragontony1@gmail.com
 baseurl: "/dtB"
 url: "https://dragontony1.github.io"
 github_username:  dragontony1
+permalink: /:categories/:title
 
 # Build settings
 markdown: kramdown
