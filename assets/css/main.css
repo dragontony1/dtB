@@ -121,7 +121,6 @@ main {
   }
   #list-h3-sect {
     display: block;
-    height: 70px;
     overflow: auto;
     padding: 5px 0;
   }
@@ -148,6 +147,7 @@ main {
   }
   #list-h1 {
     font-size: 4em;
+    font-family: "Avenir", "Montserrat", sans-serif;
   }
   #list-h3 {
     font-size: 1.2em;
@@ -159,6 +159,7 @@ main {
     width: 100%;
     padding: 20px;
     font-size: 0.7em;
+    font-family: "Avenir", "Montserrat", sans-serif;
     background-color: #dbdbdb;
     margin-top: 30px;
   }
@@ -217,6 +218,7 @@ main {
   }
   #post-h3 {
     font-size: 3.5em;
+    font-family: "Avenir", "Montserrat", sans-serif;
   }
 
   #index-main-sect {
@@ -275,7 +277,7 @@ main {
     -webkit-transition: 0.5s;
     font-size: 2em;
     font-weight: 300;
-    font-family: "Avenir", "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   #index-enter-btn span:after {
     content: '\00bb';
@@ -366,7 +368,6 @@ main {
   }
   #list-h3-sect {
     display: block;
-    height: 60px;
     overflow: auto;
     padding: 10px 10px 0 10px;
   }
@@ -392,6 +393,7 @@ main {
   }
   #list-h1 {
     font-size: 2.5em;
+    font-family: "Avenir", "Montserrat", sans-serif;
   }
   #list-h3 {
     font-size: 1em;
@@ -403,6 +405,7 @@ main {
     width: 100%;
     padding: 20px;
     font-size: 0.7em;
+    font-family: "Avenir", "Montserrat", sans-serif;
     background-color: #dbdbdb;
     margin-top: 30px;
   }
@@ -458,6 +461,7 @@ main {
   }
   #post-h3 {
     font-size: 2em;
+    font-family: "Avenir", "Montserrat", sans-serif;
   }
 
   #index-main-sect {
@@ -491,7 +495,7 @@ main {
   #index-h1 {
     font-size: 3.5em;
     margin: 0 auto;
-    font-family: "Avenir", "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   #index-main-sect-2 {
     display: block;
@@ -516,7 +520,7 @@ main {
     -webkit-transition: 0.5s;
     font-size: 2em;
     font-weight: 300;
-    font-family: "Avenir", "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
   #index-enter-btn span:after {
     content: '\00bb';
