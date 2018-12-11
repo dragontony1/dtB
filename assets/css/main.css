@@ -46,7 +46,7 @@ main {
   font-family: 'Nanum Myeongjo', serif;
 }
 .fb-like {
-  margin: 10px 0;
+  margin: 50px 0;
 }
 
 /*.top-navBar*/
@@ -538,5 +538,8 @@ main {
   #index-enter-btn:hover {
     background-color: #fff;
     opacity: 0.8;
+  }
+  .fb-like {
+    margin: 30px 10px;
   }
 }
