@@ -4,6 +4,9 @@ body, div, p, li, a, blockquote {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 1em 0;
+}
 ul, ol {
   list-style: none;
   margin: 0;
@@ -44,6 +47,9 @@ main {
 }
 .contents:lang(ko) {
   font-family: 'Nanum Myeongjo', serif;
+}
+.ipa {
+  font-family: "Times New Roman", serif;
 }
 .fb-like {
   margin: 50px 0;
@@ -112,7 +118,18 @@ main {
     width: 60%;
     margin: 0 auto;
   }
-  #list-h1-sect {
+  #list-h1-sect-trv {
+    display: block;
+    text-align: center;
+    background-image: url(/dtB/assets/img/trv-diaries/trv-list-h1-sect-bg.jpg);
+    background-size: 100% auto;
+    background-position: center;
+  }
+  #list-h1-sect-dev {
+    display: block;
+    text-align: center;
+  }
+  #list-h1-sect-dt {
     display: block;
     text-align: center;
   }
@@ -207,11 +224,14 @@ main {
     font-weight: bold;
     color: #21439f;
   }
+  #post-main-sect a:hover {
+    text-decoration: underline;
+  }
   #post-h1 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
   #post-h2 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   #post-h3 {
     font-size: 3.5em;
@@ -359,7 +379,20 @@ main {
     width: 100%;
     margin: 0 auto;
   }
-  #list-h1-sect {
+  #list-h1-sect-trv {
+    display: block;
+    text-align: center;
+    background-image: url(/dtB/assets/img/trv-diaries/trv-list-h1-sect-bg.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  #list-h1-sect-dev {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #list-h1-sect-dt {
     display: block;
     text-align: center;
     margin-bottom: 20px;
@@ -452,13 +485,13 @@ main {
     color: #21439f;
   }
   #post-h1 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   #post-h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   #post-h3 {
-    font-size: 2em;
+    font-size: 2.3em;
     font-family: "Avenir", "Montserrat", sans-serif;
   }
 
