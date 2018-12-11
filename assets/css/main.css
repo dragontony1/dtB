@@ -339,6 +339,7 @@ main {
     left: 0;
     right: 0;
     width: 100%;
+    font-family: 'Avenir', 'Josefin Sans', sans-serif;
   }
   #top-nav div ul li {
     display: block;
