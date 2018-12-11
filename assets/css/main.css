@@ -1,7 +1,4 @@
----
----
 
-@import "{{ site.theme }}";
 /*reset*/
 body, div, p, li, a, blockquote {
   margin: 0;
