@@ -4,6 +4,9 @@ body, div, p, li, a, blockquote {
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x: hidden;
+}
 p {
   margin: 1em 0;
 }
