@@ -4,7 +4,7 @@ body, div, p, li, a, blockquote {
   margin: 0;
   padding: 0;
 }
-body {
+main {
   overflow-x: hidden;
 }
 p {
@@ -346,7 +346,6 @@ main {
     display: block;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
     height: 55px;
     width: 100%;
