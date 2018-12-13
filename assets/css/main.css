@@ -181,7 +181,7 @@ main {
     display: block;
     height: 42px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
     font-size: 0.7em;
     font-family: "Avenir", "Montserrat", sans-serif;
     background-color: #dbdbdb;
@@ -447,7 +447,7 @@ main {
     display: block;
     height: 42px;
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
     font-size: 0.7em;
     font-family: "Avenir", "Montserrat", sans-serif;
     background-color: #dbdbdb;
