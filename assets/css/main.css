@@ -63,7 +63,7 @@ main {
   main {
     position: absolute;
     left: 0;
-    top: 90px;
+    top: 100px;
   }
   #top-nav {
     display: block;
@@ -325,6 +325,43 @@ main {
   #index-enter-btn:hover {
     background-color: #fff;
     opacity: 0.8;
+  }
+
+  #main-top-head {
+    display: block;
+    font-family: "Avenir", "Montserrat", sans-serif;
+    font-size: 4em;
+    text-align: center;
+    padding: 10px;
+  }
+  #main-top-sub-head {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    text-align: left;
+    padding: 10px;
+  }
+  #article-sect {
+    display: block;
+    border: 5px solid #000;
+    margin: 10px 0;
+  }
+  #article-sect img {
+    display: block;
+    width: 100%;
+  }
+  #og-content-sect {
+    display: block;
+    padding: 20px 10px;
+  }
+  #og-content-sect h3 {
+    display: block;
+    font-size: 2em;
+  }
+  #og-content-sect p {
+    display: block;
+    margin: 5px;
+    font-style: italic;
   }
 }
 
@@ -588,5 +625,42 @@ main {
   }
   .fb-like {
     margin: 30px 10px;
+  }
+
+  #main-top-head {
+    display: block;
+    font-family: "Avenir", "Montserrat", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px;
+  }
+  #main-top-sub-head {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+  }
+  #article-sect {
+    display: block;
+    border: 5px solid #000;
+    margin: 20px 10px;
+  }
+  #article-sect img {
+    display: block;
+    width: 100%;
+  }
+  #og-content-sect {
+    display: block;
+    padding: 20px 10px;
+  }
+  #og-content-sect h3 {
+    display: block;
+    font-size: 1.6em;
+  }
+  #og-content-sect p {
+    display: block;
+    margin: 5px;
+    font-style: italic;
   }
 }
