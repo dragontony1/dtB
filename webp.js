@@ -1,8 +1,8 @@
 var imagemin = require("imagemin"),    // The imagemin module.
   webp = require("imagemin-webp"),   // imagemin's WebP plugin.
-  outputFolder = "./assets/img/trv-diaries/Second",            // Output folder
-  PNGImages = "./assets/img-non-webp/trv-diaries/Second/*.png",         // PNG images
-  JPEGImages = "./assets/img-non-webp/trv-diaries/Second/*.jpg";        // JPEG images
+  outputFolder = "./assets/css",            // Output folder
+  PNGImages = "./assets/css/*.png",
+  JPGImages = "./assets/css/*.jpg";
 
 imagemin([PNGImages], outputFolder, {
   plugins: [webp({
@@ -10,7 +10,7 @@ imagemin([PNGImages], outputFolder, {
   })]
 });
 
-imagemin([JPEGImages], outputFolder, {
+imagemin([JPGImages], outputFolder, {
   plugins: [webp({
     quality: 65 // Quality setting from 0 to 100
   })]
