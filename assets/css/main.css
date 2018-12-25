@@ -124,21 +124,21 @@ main {
   #list-h1-sect-trv {
     display: block;
     text-align: center;
-    background-image: url(/dtB/assets/img/trv-diaries/trv-list-h1-sect-bg.jpg);
+    background-image: url(/dtB/assets/img/trv-diaries/trv-list-h1-sect-bg.webp);
     background-size: 100% auto;
     background-position: center;
   }
   #list-h1-sect-dev {
     display: block;
     text-align: center;
-    background-image: url(/dtB/assets/img/dev-diaries/dev-list-h1-sect-bg.jpg);
+    background-image: url(/dtB/assets/img/dev-diaries/dev-list-h1-sect-bg.webp);
     background-size: 100% auto;
     background-position: top;
   }
   #list-h1-sect-dt {
     display: block;
     text-align: center;
-    background-image: url(/dtB/assets/img/daily-thoughts/dt-list-h1-sect-bg.jpg);
+    background-image: url(/dtB/assets/img/daily-thoughts/dt-list-h1-sect-bg.webp);
     background-size: 100% auto;
     background-position: center;
     color: white;
