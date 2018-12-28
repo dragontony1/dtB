@@ -1,0 +1,23 @@
+---
+layout: post-page
+title: Entry 1
+top-category: Programming Diaries
+sub-category: dtB SS2 Update
+header-title: 업데이트 일기 1
+categories: dev-diaries
+---
+<img src="{{ site.baseurl }}/assets/img/daily-thoughts/entry-40-photo-2.webp" class="hrz_img">
+SS 1127 꽤나 고생해서 결국엔 됐다
+SS 1129 재도전! 142824 이제 absolute 포지셔닝을 어떻게 쓰는건지 좀 알겠다.. 자식 상속하는 부모 기준으로 자식을 특정 방식으로 배치하고 싶을 때 걍 무조건 쓰면 오케이, 근데 vertical-align이 블럭 엘리먼츠는 안 된다는건 좀 놀랐다 새로 알게 됨..
+143130 nav 바 만드는 중~ 생각보다 수월히 끝남 이제 hover selector만 더해주고 손만 좀 보면 끄읕 글꼴 적용 어카지 근데..
+아 잠만 hover 적용하는게 생각보다 간단하지가 않다..143831 .navIcon 클래스 hover하면 .navLink가 display: none에서 block으로 바뀌어야 하는데 .navIcon이 .navLink의 부모 클래스가 아니라 안 된다… 그럼 걍 temp 클래스 div로 둘 다 감싸서 해야 하나.. 아악
+망했다 temp도 안 된다. 생각해보면 될 리가 없다 그럼 어쩔 수 없이 .navIcon 클래스 이름 바꿔서 .navLink의 부모 클래스로 다시 정의하는 수밖에.. 그럼 밑에 css도 다 바꿔야하잖아.. 아악
+145914 와씨 드뎌 됐다.. 이거 어케 했냐면 ul 감싸던 div 태그 걍 없애고 ul랑 img랑 바로 맞닿게 한 다음에, ul display를 none으로 해놓고 .navIcon: hover일 때와 ul:hover일 때에만 ul display가 block이 되게 했다! 약간 얌체같지만 제대로 작동하기만 되면 상관없지 않은가! 대신 ul랑 img 맞닿게 하려고 img 주변에 20 픽셀 씩 margin 줬던 거 padding으로 바꿔줬다.
+드디어 당초 계획했던 기능 완성! 디자인적 요소를 이제 손 볼 차레다. 애니메이션은 나중에 추가하는 걸로!
+잠만 지금 큰일났다 152034 navBar에다가 position: fixed를 걸어줬는데 갑자기 위치가 이상하게 됐다. 뭐지?? 뭐가 문제지 분명히 ul li a 모두 inline-box 잘 정의되어 있는데..
+154042 아니 잠시만.. An inline element whose position is set to absolute or fixed, obtains the capabilities of the block-level elements. 도대체 왜?? 아니 그럼 inline element를 fix 못 하는건가? 말이 되나..
+161043 어쩔 수 없이 땜빵으로 메꿨다 (ul에 fixed 적용)
+
+걍 리셋해야겠다.. 땜빵에 뺌빵이 계속되니 너무 코드가 더러워진다.
+일단 지금까지 해놓은 CSS는 그래도 좀 아까우니 주석 처리 해놓고 천천히, 처음부터 다시 하겠다!
+그리고 <nav> 자손으로 div 하나가 전체를 감싸고 있었는데, 하다 보니 있어야 할 이유를 잘 모르겠다. 지우고 nav 자손으로 img와 ul만 있는 간단한 구조로 다시 해야겠다. 네비게이션 바 디자인하는게 이렇게 어려워서야…

@@ -37,6 +37,27 @@
   +minor changes in fonts and template areas
   +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
   ---------------------------------*/
+
+  #top-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    z-index: 90;
+  }
+  #top-nav div:hover img {
+    background-color: white;
+    opacity: 0.8;
+  }
+  #top-nav div img {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    z-index: 100;
+  }
+
   body {
     margin: 0;
     margin-right: 10px;
@@ -107,6 +128,7 @@
   +error solved: added <meta viewport> tag
   ---------------------------------*/
   @media screen and (max-width: 800px) {
+
     body {
       margin: 0;
     }
@@ -161,6 +183,11 @@
   </style>
 </head>
 <body>
+  <nav id="top-nav" class="head1">
+    <div>
+      <a href="https://dragontony1.github.io/dtB/main" id="top-nav-temp"><img src="blog-icon.png" alt="dtB_logo"></a>
+    <div>
+  </nav>
   <div class="grid">
     <div class="top-banner">
       <img src="top-banner-photo.png" width="100%">
@@ -171,6 +198,7 @@
     </div> -->
     <div class="header">
       <h1>BLOG page for dragontony1 HTML.</h1>
+      <h1>***Click on the blog icon on the top-left side to move back to the original blog.***</h1>
     </div>
     <div class="sidebar">
       <ul>
