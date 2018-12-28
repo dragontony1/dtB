@@ -1,0 +1,227 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entries of Daily Thoughts</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://dragontony1.github.io/dtB/archives/SS1/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://dragontony1.github.io/dtB/archives/SS1/favicon/manifest.json">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.1
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    ---------------------------------*/
+    body {
+      margin: 0;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.2
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +error solved: added <meta viewport> tag
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 4px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+
+      ul {
+        padding-left: 12.3px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in dtB/archives/SS1/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entries for 'Daily Thoughts'</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/main.html" title="Go to main page.">GO TO MAIN for Blog</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <p><h3>List of Recent Entries</h3></p>
+      <p>
+        <ol>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-1.html">Gibberish_HTML과 나</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-2.html">지리이야기_도쿄 도시권(東京都市圏)</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-3.html">언어이야기_언어와 '감'</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-4.html">ㅁㅊ!_충칭(重庆)의 면적</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-5.html">ㅁㅊ!_사모아어와 일본어</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-6.html">ㅁㅊ!_"니가타를 새롭게!"</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-7.html">Gibberish_역대급 갑분싸</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-8.html">Gibberish_아이슬란드어와 핀란드어를 혼동하기 시작하다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-9.html">Gibberish_하겐다즈와 움라우트</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-10.html">Gibberish_찜통더위</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-11.html">언어이야기_Vítejte v českém jazyce, 체코어를 시작하다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-12.html">Gibberish_발음 집착</a></li>
+          <li><a href="" onclick="alert('비공개 게시물입니다.')">Gibberish_대학, 그리고 입시</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-14.html">지리이야기_네무로진흥국(根室振興局)</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-15.html">철도이야기_2호선 신차에 타다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-16.html">ㅁㅊ!_나카시베츠 공항(中標津空港)</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-17.html">Gibberish_연플리 에이틴</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-18.html">Gibberish_나는 한국인인데...?</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-19.html">Gibberish_초라하기 짝이 없는 나의 HTML 웹사이트</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-20.html">Gibberish_롬브 커토의 책을 읽고</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-21.html">ㅁㅊ!_JLPT 일본어능력검정시험(JLPT) 결과</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-22.html">ㅁㅊ!_BTS LY 結: Answer 수록곡 'I'm Fine' 반주와 가사에서 놀라운 발견을 하다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-23.html">ㅁㅊ!_아이슬란드어 라디오에서 들린 폴란드어</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-24.html">Gibberish_대학 원서 접수 끝!</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-25.html">언어이야기_체코어에서 폴란드어 Język polski로 환승</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-26.html">언어이야기_아이슬란드어가 아름다운 이유</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-27.html">ㅁㅊ!_하네다(羽田)-메맘베츠(女満別) 코드쉐어?</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-28.html">ㅁㅊ!_마케도니아어 'добра!'</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-29.html">철도이야기_홋카이도 이부리(胆振地方) 지진과 위기의 JR 홋카이도</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-30.html">철도이야기_신분당선(강남~정자) 왕복 탑승기</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-31.html">언어이야기_샤워하면서 본 뮤지컬 레미제라블에서 폴란드어의 비밀을 푸는 열쇠를 찾다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-32.html">최근 일본 旭日旗(욱일기) 이슈에 대해서...</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-33.html">(언어이야기)漢字特集 1_한자권 언어들의 한자 독음 뒤에 숨겨져 있는 엄청난 비밀들</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-34.html">Gibberish_프라하 지하철 체코어 안내방송으로 인생 최대 업적을 달성하다</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-35.html">언어이야기_/ʐ/ 음소의 둔갑술: 중국어에서는 'ㄹ', 폴란드어에서는 'ㅈ'?!</a></li>
+          <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-36.html">Gibberish_Favicon 설정</a></li>
+        </ol>
+      </p>
+    </div>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.1</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>

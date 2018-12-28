@@ -1,0 +1,224 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entry 1: 프롤로그</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="프라하,언어학올림피아드,IOL,IOL 2018,언올,언어학 올림피아드">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.3
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+    +minor changes in template areas, made new id for horizontal images(#hrz) & vertical images(#vtc), adjusted horizontal width to 70%, vertical width to 40%
+    ---------------------------------*/
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      margin-right: 10px;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    #hrz {
+      width: 70%;
+    }
+
+    #vtc {
+      width: 40%;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.3
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +error solved: added <meta viewport> tag
+    +minor changes in template areas, made new id for horizontal images(#hrz) & vertical images(#vtc), adjusted horizontal width to 95%, vertical width to 50%
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 4px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+
+      ul {
+        padding-left: 12.3px;
+      }
+
+      #hrz {
+        width: 95%;
+      }
+
+      #vtc {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in dtB/archives/SS1/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entry 1: 프라하행 비행기 시간까지 11시간</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Go to list.">Travelog / Prague, Czech Republic</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html" title="Entries for Daily Thoughts"> Daily thoughts</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>PROLOGUE</h3>
+      <p>드디어 출국하는 날이 왔다.</p>
+      <p>앞으로 일주일 간의 체코 기행문을 이틀에 한 번, 시간이 안 되면 사흘에 한 번 올려보도록 하겠다.</p>
+      <p>사실, 이 기행문 시리즈을 쓰기로 결정한 이유는, 남들에게 보여주기 위하기보단 나의 소중한 추억들을 쌓아놓고 나중에 언제든지 다시 돌아와 사진들을 보면서 추억팔이를 할 수 있는 아카이브같은 것을 만들고 싶었기 때문이다.</p>
+      <p>(근데 생각해보니 둘째날 개인전이 끝나기 전까지는 많이 바쁘고 여유도 별로 없을 것 같아 대략 4일 후 쯤부터 글을 업로드할 수 있을 것 같다. 좀만 기다려주시길!)
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d3-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.3</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>

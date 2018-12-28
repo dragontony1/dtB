@@ -1,0 +1,206 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>dragontony1 HTML Website</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://dragontony1.github.io/blog/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://dragontony1.github.io/blog/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://dragontony1.github.io/blog/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://dragontony1.github.io/blog/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://dragontony1.github.io/blog/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://dragontony1.github.io/blog/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://dragontony1.github.io/blog/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://dragontony1.github.io/blog/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dragontony1.github.io/blog/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://dragontony1.github.io/blog/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dragontony1.github.io/blog/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://dragontony1.github.io/blog/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://dragontony1.github.io/blog/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://dragontony1.github.io/blog/favicon/manifest.json">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+  /*---------------------------------
+  Basic Style Sheet UNDER CONSTRUCTION
+  version: 1.2
+  author: Doyeop Lee
+  email: dragontony1@gmail.com
+  website: dragontony1.github.io/main/
+  major updates:
+  -changes in overall grid structue, usage of template-areas, sidebar range
+  +minor changes in fonts and template areas
+  +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+  ---------------------------------*/
+  body {
+    margin: 0;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;
+  }
+  img {
+    display: block;
+    margin: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+  }
+
+  .top-banner {
+    grid-area: top-banner;
+  }
+
+  /*  grid TITLE would not be applied in blog/main.html */
+  /*.title {
+    grid-area: title;
+  }*/
+
+  .header {
+    grid-area: header;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Avenir", sans-serif;
+    border-bottom: solid slategray 2px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    border: solid 3px black;
+    background-color: lightskyblue;
+    margin: 10px;
+    font-family: "Avenir", sans-serif;
+  }
+
+  .content {
+    grid-area: content;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    grid-area: footer;
+    border-top: solid 3px black;
+    font-family: "Times New Roman", serif;
+    padding-top: 30px;
+  }
+
+  #sidebar-ul {
+    padding-left: 20px;
+  }
+
+  /*---------------------------------
+  Basic Style Sheet UNDER CONSTRUCTION
+  version: MOBILE 1.2
+  author: Doyeop Lee
+  email: dragontony1@gmail.com
+  website: dragontony1.github.io/main/
+  major updates:
+  -changes in overall grid structue, usage of template-areas, sidebar range
+  +minor changes in fonts and template areas
+  +error solved: added <meta viewport> tag
+  ---------------------------------*/
+  @media screen and (max-width: 800px) {
+    body {
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in blog/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      margin: 0;
+      text-align: center;
+      font-size: 1em;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 4px black;
+      margin: 5px;
+      background-color: lightskyblue;
+      font-family: "Avenir", sans-serif;
+      text-align: center;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      padding-top: 30px;
+      font-family: "Times New Roman", serif;
+    }
+
+    ul {
+      padding-left: 12.3px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in blog/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>BLOG page for dragontony1 HTML.</h1>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html" title="Lists of works that are ">Daily thoughts</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>Welcome!</h3>
+      <p>I am currently a senior student(12th grade) at Korea Minjok Leadership Academy, a boarding school located in Hoengseong, South Korea. Personal area of interest covers a wide range of things; languages(especially North Germanic (Swedish, Danish, Norwegian, Faroese and Icelandic) and West Slavic languages including Polish and Czech), linguistics(especially phonology), computer programming, railways&trains(especially those of Korean and Japanese), and so on.</p>
+      <p>I'd be uploading posts about my daily thoughts, ranging from useless short gibberish to fairly long diaries. Time to time I also write about my traveling experiences: uploading photos and sharing what I saw, heard, and felt during the trip.</p>
+      <p>On the top left corner of this webpage there'd be several links; click on them and you'll find a list of entries. Thank you for visiting this website, and I hope you'd enjoy.</p><hr>
+      <h3>환영합니다!</h3>
+      <p>안녕하세요, 강원도 횡성에 위치한 기숙사 고등학교에 다니고 있는 한 평범한 12학년 고딩입니다. 언어(가장 좋아하는 언어는 아이슬란드어와 폴란드어입니다), 언어학(특히 음운론), 일본 철도, 컴퓨터 코딩 등에 관심이 많습니다.</p>
+      <p>지금 계신 이 페이지 상단 좌측(컴퓨터)/상단(모바일)을 보시면 다음과 같은 링크가 있습니다:<br><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html">Daily Thoughts</a> 게시판에서는 제가 일상적으로 작성하는 글들을 보실 수 있습니다. 올해 7월에 국제 언어학 올림피아드 참가를 위해 체코 프라하를 다녀왔는데, 프라하에 있는 동안 보고 느낀 것을 사진과 함께 <a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html">Travelog/Prague, Czech Republic (July 2018)</a> 게시판 글들에 기록해놓았습니다!</p>
+      <p>그럼, 블로그를 방문해주셔서 대단히 감사드리고, 좋은 시간 되시길 바라겠습니다!</p>
+      <p>블로그 소개글 바로가기: <a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-1.html" title="Entry 1: HTML과 나">Entry 1: HTML과 나 </a></p><hr>
+      <h3>ようこそ。</h3>
+      <p>こんにちは。私は今年６月からこのブログを運営している韓国のとある高校生です。（高校３年生です、来年大学行きます）最近関心のあること、いわゆる「マイブーム」としては、いろんな言語（特にアイスランド語、スウェーデン語、デンマーク語、ポーランド語、チェコ語などの北欧・東ヨーロッパの言語）に挑戦してみることです。その他にも日本の鉄道に強い興味を抱いていて、実は中学３年生だったときに日本語の勉強を始めたのも日本の鉄道がきっかけでした。そして、高校卒業したら日本鉄道旅をする予定です。特に北海道のローカル線と東北地方の第３セクター・ローカル線を巡って最後に関東の都市感のある路線を味わうつもりです。好きな列車は迫力感の凄いJR西日本223系とレトロ感のある東京メトロ600系ですかね。（残念ながら東京メトロ600系は１０月５日に引退してしまった模様です…）ちなみに、好きな日本のユーチューバーははじめしゃちょー（＋畑チャンネル）、フィッシャーズ、桐崎栄二です。（ほぼ毎日観てます　笑）</p>
+      <p>ただいまご覧になっているこのページ右上の方にはいくつかのカテゴリーがあります。そちらの方をクリックするとそれぞれの投稿リストへ移動することができます。<a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html">Daily Thoughts</a>では日常的な投稿をアップロードしています。今年７月国際言語学オリンピック参加のためチェコプラハに行ってきましたんですが、人生初ヨーロッパ旅の記録を<a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html">Travelog/Prague, Czech Republic (July 2018)</a>こちらにアップロードしておきました。</p>
+      <p>今のところ全ての投稿は韓国語に作成されています。近いうちに日本語の投稿も作成する予定でありますので今後ご覧になっていただければと思います。このブログにお越しくださいまて誠にありがとうございます！</p>
+      <p>ブログ紹介（韓国語）: <a href="https://dragontony1.github.io/dtB/archives/SS1/daily/entry-1.html" title="Entry 1: HTML과 나">Entry 1: HTML과 나 </a></p>
+    </div>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>

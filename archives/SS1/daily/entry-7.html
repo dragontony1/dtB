@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entry 7: 역대급 갑분싸</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.2
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+    ---------------------------------*/
+    body {
+      margin: 0;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.1
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 3px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in dtB/archives/SS1/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entry 7: 역대급 갑분싸</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html" title="Go to list.">Daily Thoughts</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>#Gibberish 2</h3>
+      <p>#언올여름학교 #새벽감성 #갑분싸</p>
+      <p>오지 않을 것만 같았던 여름학교 마지막 날이다. 정말 힘들고 피곤한 캠프였지만, 그만큼 단기간에 만든 소소한 추억들도 많았다. 새벽 1시 반, 잠시 생윤 인강을 멈추고 창 밖을 바라보는데, 필자의 오랜 불치병이 다시 스멀스멀 올라오기 시작했다. 과거 추억에 대한 집착이 굉장히 강한 필자는, 어떤 장소에 조금이라도 정이 들면 쉽게 기억 속에서 지우지 못하고, 지우지 않기 위해 안간힘을 쓴다. 추억을 잊는 것, 잃는 것을 굉장히 두려워해, 어딜 가든 그 곳의 풍경을 사진에 담고 소리를 녹음기에 담아 그 곳의 기억을 최대한 오랫동안 붙잡고 있으려고 노력한다.</p>
+      <p>이번 여름학교도 마찬가지였다. 외대 국제 캠퍼스에 5일 동안 있으면서 어느새 정든 장소가 되었고, 마지막 날이 되어 다시 추억에 대한 집착이 시작된 것이다. 이를 이기지 못하고 찾아온 새벽 감성에 취해버린 필자는, 룸메 피** 친구에게 잠시 산책 좀 하고 오겠다고 일방적 통보를 하고 무작정 방을 나와버렸다.
+      엘리베이터를 타고 내려가면서 그냥 캠퍼스나 쭈욱 한 번 천천히 돌아보면서 사진이나 몇 장 찍어야겠다고 생각했다. 지금 돌아보면 새벽에 밖에 혼자 나가서 산책하는 일은 단 한 번도 해본 적이 없었던 것 같다. 그래서 더욱 그랬는지, 기숙사의 밖, 새벽의 바깥 공기로 향하는 필자의 설레는 발걸음은 너무나도 가벼웠다.</p>
+      <p>그래서 엘리베이터를 타고 1층에 도착해서 기숙사 정문을 나가려는데… 엥? 문이 열리지 않는다. 너무나도 당황한 필자는 문을 열어보려고 손잡이를 붙잡고 꽤 이리저리 당겨보았는데 소리가 크게 났나 보다. 얼마 안 있어 갑자기 뒤에서 경비 아저씨가 경비실에서 창문을 열고, 1시 이후에는 기숙사 통금이라 못 나간다고 말씀하셨다.</p>
+      차오르던 필자의 새벽 감성에 차가운 얼음물을 끼얹는 말이었다.</p>
+      <p>예기치 못한 ‘갑분싸’ 상황에 너무나도 당황한 나머지 필자는 엘리베이터로 다시 발길을 돌렸다. 그런데, 방에 바로 돌아가서 ‘산책을 하려 했는데 기숙사 문이 잠겨 있어서 못 나가겠더라. 그래서 그냥 다시 왔어.’라고 룸메에게 말하기가 조금 뭐해서, 층 휴게실에서 30분 동안 유투브의 세계에서 서핑을 하다가 방에 들어갔다. 룸메는 벌써 자고 있었고, 나도 그냥 침대에 누웠다.
+      </p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>

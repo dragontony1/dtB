@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entry 13: 서울대와 인생</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.2
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+    ---------------------------------*/
+    body {
+      margin: 0;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.1
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 3px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in dtB/archives/SS1/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entry 13: 서울대와 인생</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html" title="Go to list.">Daily Thoughts</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>#Gibberish 7</h3>
+      <p>오랜만에 깊은 현타가 왔다. 닥치는 대로 써본다.</p>
+      <p>너무 힘들다. 아무것도 손에 잡히지 않는다.</p>
+      <p>수능 사탐 인강을 들으면서 좋은 이야기를 많이 들었다. 절망적인 순간이 와도 포기하지 말고, 자신의 목표가 무엇인지, 자신이 꿈꾸는 행복한 삶이 무엇인지 떠올려라; 힘들다고 도망친 곳에 결코 행복이 있진 않을 것이다; 1년 후 누군가 대학을 물어봤을 때 자랑스럽게 ‘서울대’라고 외칠 수 있는 너가 되고 싶었던 것이 아니었느냐…</p>
+      <p>맞다. 나는 그런 사람이 되고 싶었고, 그런 사람이 되고 싶다.</p>
+      <p>어제도 학원에서 학원 선생님과 대화를 하던 중 이런 얘기를 듣게 되었다.</p>
+      <p>학원 선생님께서는 어렸을 때 정말 가난한 집에서 자라셨다고 한다. 부모님은 앓아 누우시고, 매일같이 사람들이 빚을 독촉하러 찾아왔다고 한다. 한 번은 그들이 집안의 가구들을 마구 부수고 간 적도 있다고 할 정도로 선생님께서는 불우한 환경에서 사춘기 시절을 보내셨다고 한다. 그럼에도 불구하고 선생님께서는 열심히 공부하셨고, 결국 연*대에 입학할 수 있다고 한다. 몇 년 동안 직업을 구하지 못해 방황하던 중 우연히 강남의 한 학원에서 교사를 채용한다는 것을 알게 되셨고, 연*대를 나오신 선생님께서는 비교적 쉽게 학원 교사직을 얻을 수 있었다고 한다.</p>
+      <p>그러면서 선생님께서는 이런 말씀을 하셨다: 사회의 가장 밑바닥에서 태어나 자라났음에도 불구하고 지금 이렇게 먹고 살 수 있을 정도로 올라설 수 있었던 것은 내가 연*대를 졸업했다는 사실로밖에 설명이 안 된다; 어렸을 때의 선생님과 너희를 비교해보면 출발선 자체가 다른데, 그렇게나 불우했던 가정에서 자라났음에도 불구하고 선생님이 이 정도 자리까지 올라올 수 있었던 것에 비추어보면 너희의 성공가도는 정말 무궁무진하다는 것을 알 수 있다.
+      정말 다 좋은 이야기이고, 많은 사람과 나눌 가치가 있는 말이다.</p>
+
+      <h3>서울대가 귀하를 입학시키면 안 되는 이유를 1000자 이내로 서술하시오. (띄어쓰기 포함)</h3>
+
+      <p>나는 지금까지 내 나름대로 정말 열심히 살아왔다고 생각했다. 점점 절망적으로 변해가는 상황 속에서도 나는 이 믿음만큼은 지키고자 했다. 그렇지만 아니었다. 주변 사람들은 내게 ‘후회 없이 해라’라고 말하곤 했다. 나는 물론 내 고등학교 생활에 대한 후회는 없다. 나는 내 나름대로 할 수 있을 만큼 최대한 열심히 했고, 고등학교 1학년으로 돌아가 다시 살아도 그 이상은 못 할 것 같다. 분명 후회는 없다. 하지만, 주변을 둘러보면 내 친구들은 언제나 나보다 더 열심히 공부하고 있었다. 한결같이 매일 매 자습 시간 어학실 같은 자리에 앉아 단 한 순간도 집중력을 놓치지 않고 공부하던 친구들, 며칠 밤을 새면서까지 눈에 불을 태우고 이를 악물면서 공부하던 친구들, 이 정도면 다 공부한 거겠지 싶었을 때 언제나 그 이상을 공부하던 친구들. 그러곤 그 대가로 교내 상을 휩쓸고 영재장학금을 타며 서울대 안정권의 내신을 받아간 친구들. 나는 내 자신에게 '후회 없이 하면 된 것'이라며 매일같이 되뇌었고 그에 맞게 정말 열심히 살고자 노력했지만 단 한 번도 그들처럼 살지는 못했던 것 같다.</p>
+      <p>지금 생각해보면 역량과 능력, 그리고 의지의 차이인 것 같다. 안타깝지만 개인마다 역량과 능력은 다른 것이고, 누구는 다른 사람보다 그것이 뒤쳐진다는 것도 어쩔 수 없는 사실이다. 나는 얼마 전 충격적인 것을 보았다. 내 주변에 서울대에 확실히 갈 것 같은 친구들과 나 사이에 선이 그어지고 있는 것을 보았다. 그 선 너머의 내 친구들은 내신, 상 실적 등을 다 떠나서, 단적으로 역량과 능력이 뛰어난 친구들이다. 내가 평소에 존경하던, 닮고 싶었던 친구들이다. 지금까지 살아오면서 나도 서울대 입학이라는 꿈을 키워오면서 ‘나도 갈 수 있어’라는 믿음을 지키고자 발버둥치며 살아왔으나, 결정적으로 나는 서울대를 갈 만한 자격이 되지 않는다는 사실을 깨달아버렸다. (923자)
+
+      <h3>알고 있다고, 썅</h3>
+
+      <p>주변에서 ‘덕담’이라고 하는 이야기들이 내 심기를 건드리기 시작했다. 서울대학교는 정말 좋은 대학교이다, 대학이 인생의 다가 아니라지만 너가 남들 앞에서 떳떳해지기 위해서는 대학교 학력이 어쩔 수 없다, 서울대에 가는 것은 너가 항상 바라던 것이 아니더냐, 고등학교 때의 내신 자체는 차이가 크지 않을지 몰라도 그 내신 차로 대학이 갈리면 나중에 서울대에 입학한 친구와 그렇지 못한 친구 사이에 격차는 크게 벌어질 것이다.</p>
+      <p>잘 알고 있다. 아니, 고등학교 입학할 때부터 이미 잘 알고 있었다.</p>
+      <p>그럼 왜 짜증이 나느냐?</p>
+      <p>도대체 왜 서울대 못 가는 아이한테 이런 이야기를 하는 것이냐. 누군 그걸 몰라서, 누군 서울대 가기 싫어서 그런 줄 아는 것이냐. 나도 잘 안다. 아는데 서울대를 못 가는 것을 어쩌란 말이냐. 수능은 3달 남았으며, 수시 모집은 당장 다음 달이다. 내신 산출은 이미 다 끝났고, 더 나갈 수 있는 대회는 없다. 그런데 어쩌란 말이냐. 이미 격차는 벌어진 것이고, 주사위는 던져진 것이다. 그런 말은 저기 길거리를 나돌아다니는 코흘리개 초등학생한테나 해라.</p>
+
+      <p>이제는 더 이상 진부한 이야기를 하고 싶지 않다.</p>
+      <p>솔직히 잘 모르겠다.</p>
+      <p>무엇을 모르겠는지도 모르겠다.</p>
+      <p>總體的 崩壞다.</p>
+      <p>무엇을 해야할지도 모르겠다.</p>
+
+      <p>모레가 오면 수능 D-Day 시계의 백의자리 숫자가 없어진다.</p>
+      <p>이젠 해도 바뀔 수 있는 것은 없다.</p>
+      <p>수시 뿐만 아니라 수능도 마찬가지이다.</p>
+      <p>이미 몇 개월을 수능에 올인해서 준비한 친구들이 천지에 깔렸고, 그에 비해 내가 하던 수능 공부는 한낱 어린아이의 모래장난에 지나지 않는다.</p>
+      <p>이 처절한 몸부림은 궁극적으로 무엇을 위한 것일까.</p>
+      <p>내게 지금 답을 줄 수 있는 사람은 없다. 주변 친구들도 나와 같은 고삼이기에 나의 이런 투덜댐은 그들에게 방해만 될 것이다. 그럼 답은 내가 찾아야 하는 것이다. 그런데 모르겠다. 답을 어떻게 찾아야 할지도 모르겠다.</p>
+      <p>건성으로 삶을 살아온 내가 슬프다라는 이야기를 할 자격은 될지 모르겠다.</p>
+      <br>
+      <p>절망적이다</p>
+      <p>쉼표도 없이 마침표도 없이</p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>

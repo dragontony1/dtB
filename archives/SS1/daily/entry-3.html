@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Entry 3: 외국어와 '감'</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="author" content="Doyeop Lee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: 1.2
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    +adjusted image size from 100% to 70%(horizontal images), to 30%(vertical images) by adding 'img' in CSS
+    ---------------------------------*/
+    body {
+      margin: 0;
+      margin-right: 10px;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas: "sidebar top-banner" "sidebar header" "sidebar content" "footer footer";
+    }
+
+    .top-banner {
+      grid-area: top-banner;
+    }
+
+    /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+    /*.title {
+      grid-area: title;
+    }*/
+
+    .header {
+      grid-area: header;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      font-family: "Avenir", sans-serif;
+      border-bottom: solid slategray 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      border: solid 3px black;
+      background-color: lightskyblue;
+      margin: 10px;
+      font-family: "Avenir", sans-serif;
+    }
+
+    .content {
+      grid-area: content;
+      padding-left: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      border-top: solid 3px black;
+      font-family: "Times New Roman", serif;
+      padding-top: 30px;
+    }
+
+    #sidebar-ul {
+      padding-left: 20px;
+    }
+
+    /*---------------------------------
+    Basic Style Sheet UNDER CONSTRUCTION
+    version: MOBILE 1.1
+    author: Doyeop Lee
+    email: dragontony1@gmail.com
+    website: dragontony1.github.io/main/
+    major updates:
+    -changes in overall grid structue, usage of template-areas, sidebar range
+    +minor changes in fonts and template areas
+    ---------------------------------*/
+    @media screen and (max-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "top-banner" "sidebar" "header" "content" "footer";
+      }
+
+      .top-banner {
+        grid-area: top-banner;
+      }
+
+      /*  grid TITLE would not be applied in dtB/archives/SS1/main.html */
+      /*.title {
+        grid-area: title;
+      }*/
+
+      .header {
+        grid-area: header;
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+        font-family: "Avenir", sans-serif;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        border: solid 3px black;
+        margin: 5px;
+        background-color: lightskyblue;
+        font-family: "Avenir", sans-serif;
+        text-align: center;
+      }
+
+      .content {
+        grid-area: content;
+        padding-left: 10px;
+      }
+
+      .footer {
+        grid-area: footer;
+        border-top: solid 3px black;
+        padding-top: 30px;
+        font-family: "Times New Roman", serif;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="top-banner">
+      <img src="top-banner-photo.png" width="100%">
+    </div>
+    <!--  grid TITLE would not be applied in dtB/archives/SS1/main.html --><!--
+    <div class="title">
+      <h1>Welcome to dragontony1 HTML website!</h1>
+    </div> -->
+    <div class="header">
+      <h1>Entry 3: 외국어와 '감'</h1>
+    </div>
+    <div class="sidebar">
+      <ul id="sidebar-ul">
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/daily/daily-list.html" title="Go to list.">Daily Thoughts</a></li>
+        <li><a href="https://dragontony1.github.io/dtB/archives/SS1/travelog/trav-cz-list.html" title="Travelog: Czech Republic"> Travelog / Prague, Czech Republic (July 2018)</a></li>
+        <li>Travelog / Tōhoku, Japan (2019)</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h3>#언어이야기 1</h3>
+      <p>#언올여름학교</p>
+      <p>송이송이 노래를 외국어로 번역한 후, 다시 그것을 외국인들이 한국어로 직접 번역하는 기획을 KBS 다큐멘터리에서 보았다. ‘송이송이 눈꽃’이라는 원문 가사가 ‘눈이 떨어져 쌓인다’로 바뀌어 있는 것을 보고 초등학생들은 ‘어색하다’, ‘차갑다’, ‘뭔가 이상하다’라고 말을 하더라. 이를 보고 많은 생각들이 필자의 머리를 스쳐갔다.</p>
+      <p>이렇게 특정 한국어 문장이나 단어가 이상하다, 어색하다고 느낄 수 있는 것은, 솔직히 이야기해서 한국인만의 특권이라고 생각한다. 한국의 모든 의무교육과 고등교육을 거쳐온 '토종' 한국인을 기준으로 최소 20대 이상의 성인이 되어야 완전한 한국어의 감이 생긴다고 가정하면, 한국어를 배우는 외국인의 입장에서는 최소한 10년간은 한국어를 매일, 정말 질리도록 배워야 한국어의 감을 겨우 습득할 수 있을 것이라 생각한다. 반대로 생각하면 그렇지 않은 대부분의 경우, 외국인이 한국어를 익히는 것은 가능하겠지만 원어민 수준의 감을 습득하는 것은 불가능에 가깝다고 할 수 있겠다. 이런 단어와 저런 단어는 뜻은 같지만 이런 측면에서 이렇게 느낌이 다르다라는 원어민의 설명을 들으면서 대강 이해는 할 수 있겠지만, 언어의 ‘체화’는 일어나지 않는다. 그 감을 머리로는 이해할 수 있을지 몰라도, 수십, 수백분의 일초의 짧은 순간에 두 개 이상의 비슷한 단어들을 구별하여 맥락에 더 맞는 단어를 선택해 문장을 구성하고 발화를 구성할 수 있는가는 완전히 다른 차원의 문제라는 것이다.</p>
+      <p>외국어도 당연히 마찬가지이다. 일본어를 독학하기 시작한지 4년이 되어 가고, 이제는 웬만한 뉴스나 다큐멘터리, 일상 대화를 폭넓게 이해하고 또 주제에 상관없이 내 의견을 자유롭게 표출하고 다른 일본어 화자와 의사소통을 할 수 있는 수준에 도달했다. 하지만, 아직 필자는 일본어에 완벽한 감을 가지고 있다고 말할 수 없다. 특히, 일본어는 외국인이 원어민처럼 완벽하게 구사하기가 정말로 어려운 언어이다. 明日를 あした, あす, みょうにち 이 셋 중 어느 발음으로 읽느냐에 따라 느낌이 완전히 달라진다는 것, 観る와 見る가 한자의 뜻도 같고 훈독 발음도 같지만 완전히 다른 상황에서 쓰는 단어라는 것, 이러한 무한히 많은 조그마한 느낌의 차이들을 잡아내고 체화하여 완벽하게 구사할 줄 아는 사람만이 완벽히 일본어를 마스터했다고 말할 수 있겠다. 일본어를 완벽하게 하는 것을 목표로 삼고 있던 필자에게는 정말 막막하게 느껴진다. 어디 일본어 뿐이겠는가. 프랑스어, 스웨덴어, 아이슬란드어, 덴마크어, 중국어, 광둥어… 각각의 언어에 원어민만이 가지는 ‘감’이라는 것이 있다는 것을 생각해보면, 외국어 공부의 궁극적인 목표는 무엇이 되어야만 하는가 의문이 들기도 하고, 언어를 좋아하고 사랑하는 사람으로서 약간의 회의감까지도 느낀다.</p>
+      <p>이 많은 ‘감’들, 언제 다 마스터할 수 있을까?</p>
+      <p>애초에 가능한 것일까?</p>
+      <p>외국어란, 참으로 신비롭고도 고통스러운 세계이다.</p>
+    </div>
+    <div id="disqus_thread"></div>
+    <script>
+
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dragontony1-github-io-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="footer">
+      2018 dragontony1 HTML website.<br>
+      dragontony1.github/blog<br>
+      <a href="https://dragontony1.github.io/dtB/archives/SS1/blog-basic-style-sheet-v1d1-major-updates.html" title="Major updates for this version">Basic Style Sheet version 1.2</a><br>
+      Under construction.
+    </div>
+  </div>
+</body>
+<html>
