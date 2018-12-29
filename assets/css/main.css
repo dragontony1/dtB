@@ -134,6 +134,7 @@ main {
     background-image: url(/dtB/assets/img/dev-diaries/dev-list-h1-sect-bg.webp);
     background-size: 100% auto;
     background-position: top;
+    color: white;
   }
   #list-h1-sect-dt {
     display: block;
@@ -438,6 +439,7 @@ main {
     background-image: url(/dtB/assets/img/dev-diaries/dev-list-h1-sect-bg.webp);
     background-size: 100% auto;
     background-position: left center;
+    color: white;
   }
   #list-h1-sect-dt {
     display: block;
