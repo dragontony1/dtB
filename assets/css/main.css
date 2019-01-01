@@ -344,8 +344,8 @@ main {
   }
   #article-sect {
     display: block;
-    border: 5px solid #000;
     margin: 10px 0;
+    border: 5px #000 solid;
   }
   #article-sect img {
     display: block;
