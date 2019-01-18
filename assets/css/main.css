@@ -351,6 +351,17 @@ main {
     display: block;
     width: 100%;
   }
+  #hover-notice-sect {
+      display: block;
+      margin: 10px 0;
+      border: 5px #000 solid;
+  }
+  #hover-notice-sect #hover-notice {
+    display: block;
+    vertical-align: middle;
+    margin: auto;
+    width: 25%;
+  }
   #og-content-sect {
     display: block;
     padding: 20px 10px;
@@ -651,6 +662,9 @@ main {
   #article-sect img {
     display: block;
     width: 100%;
+  }
+  #hover-notice-sect {
+      display: none;
   }
   #og-content-sect {
     display: block;
