@@ -679,4 +679,8 @@ main {
     margin: 5px;
     font-style: italic;
   }
+
+  iframe {
+    width: 100%;
+  }
 }
