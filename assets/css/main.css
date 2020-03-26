@@ -144,6 +144,13 @@ main {
     background-position: center;
     color: white;
   }
+  #list-h1-sect-lang {
+    display: block;
+    text-align: center;
+    background-image: url(/dtB/assets/img/lang-diaries/lang-list-h1-sect-bg.webp);
+    background-size: 100% auto;
+    background-position: center;
+  }
   #list-h3-sect {
     display: block;
     overflow: auto;
@@ -459,6 +466,13 @@ main {
     background-size: 100% auto;
     background-position: center;
     color: white;
+  }
+  #list-h1-sect-lang {
+    display: block;
+    text-align: center;
+    background-image: url(/dtB/assets/img/lang-diaries/lang-list-h1-sect-bg.webp);
+    background-size: 100% auto;
+    background-position: center;
   }
   #list-h3-sect {
     display: block;
